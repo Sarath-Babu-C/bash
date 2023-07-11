@@ -22,4 +22,5 @@ sudo ifconfig $interface $new_ip netmask $netmask
 sudo route add default gw $gateway $interface
 
 # Change the DNS server
+#You Doing Right !!
 echo "nameserver $dns" | sudo tee /etc/resolv.conf > /dev/null
